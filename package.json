@@ -1,0 +1,63 @@
+{
+  "name": "@mambalabsdev/mcp-linkedin-post-engager-capture",
+  "displayName": "LinkedIn Post Tracker and Comment Capture",
+  "version": "1.0.0",
+  "description": "MCP server for the Mamba Labs LinkedIn Post Tracker and Comment Capture actor on Apify. LinkedIn profiles and company pages in, their recent posts with real engagement counts out, plus the commenters LinkedIn shows publicly. No cookies and no LinkedIn account.",
+  "type": "module",
+  "bin": {
+    "mcp-linkedin-post-engager-capture": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "linkedin",
+    "social-selling",
+    "lead-generation",
+    "apify",
+    "clay"
+  ],
+  "tags": [
+    "mcp",
+    "linkedin",
+    "social-selling",
+    "lead-generation",
+    "apify",
+    "clay"
+  ],
+  "category": "productivity",
+  "author": {
+    "name": "Mamba Labs",
+    "email": "labs@mambamindsetgrowth.com"
+  },
+  "license": "MIT",
+  "logo": "https://mmg-brand-assets.netlify.app/apify-actor-pngs/apify_webhook.png",
+  "homepage": "https://mambabuilt.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-linkedin-post-engager-capture"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.6.0"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "mcpServers": ".mcp.json",
+  "mcpName": "com.mambabuilt/mcp-linkedin-post-engager-capture"
+}

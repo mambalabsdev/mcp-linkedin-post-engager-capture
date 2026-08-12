@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mamba-linkedin-post-engager-capture": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mambalabsdev/mcp-linkedin-post-engager-capture"
+      ],
+      "env": {
+        "APIFY_TOKEN": "your-apify-token"
+      }
+    }
+  }
+}
