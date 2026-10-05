@@ -46,7 +46,9 @@ const ACTOR_RUN_TIMEOUT_SECS = 1800;
 // timeout plus two minutes, so the run's own TIMED-OUT status is what the
 // caller sees rather than the wrapper giving up first and reporting nothing.
 const WRAPPER_WAIT_MS = (ACTOR_RUN_TIMEOUT_SECS + 120) * 1000;
-const POLL_INTERVAL_MS = 3000;
+// MAMBA_MCP_POLL_INTERVAL_MS exists for the test suite, which drives the poll
+// loop against a mocked Apify API. Callers never need to set it.
+const POLL_INTERVAL_MS = Number(process.env.MAMBA_MCP_POLL_INTERVAL_MS) || 3000;
 
 const TERMINAL = new Set(["SUCCEEDED", "FAILED", "TIMED-OUT", "ABORTED", "ABORTING"]);
 

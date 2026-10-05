@@ -66,7 +66,15 @@ Every row carries `degraded` and `degradation_reason`. `false` means the actor l
 
 You are charged per post collected and per commenter collected, plus a small actor start fee. Notice rows are free. `posted_since` filters before anything is charged, so a scheduled run that finds nothing new costs the actor start and nothing else.
 
-There is no result cache: every run refetches, which is the right behavior for an actor whose job is to notice new posts. Pricing is on the [actor's Apify page](https://apify.com/mambalabs/linkedin-post-engager-capture). Running this server consumes Apify credits.
+Prices from the live pricing record, read 2026-10-05:
+
+| Event | Price per event (USD) | Fires when |
+| --- | --- | --- |
+| `post-collected` | $0.002 on the Free plan, down to $0.0017 on higher Apify plans | One LinkedIn post returned, with its author, text, media, permalink, published time and live reaction and comment counts. |
+| `engager-collected` | $0.001 on the Free plan, down to $0.00085 on higher Apify plans | One person who commented on a post, with their name, profile URL and comment text. LinkedIn shows about ten per post to a logged-out visitor. |
+| `apify-actor-start` | $0.00005 | Charged when the Actor starts running. Number of events charged depends on Actor memory (one event per GB, minimum one event). |
+
+There is no result cache: every run refetches, which is the right behavior for an actor whose job is to notice new posts. The [actor's Apify page](https://apify.com/mambalabs/linkedin-post-engager-capture) carries the current prices. Running this server consumes Apify credits.
 
 ## What this server does and does not do
 
