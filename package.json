@@ -1,7 +1,7 @@
 {
   "name": "@mambalabsdev/mcp-linkedin-post-engager-capture",
   "displayName": "LinkedIn Post Tracker and Comment Capture",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "MCP server for the Mamba Labs LinkedIn Post Tracker and Comment Capture actor on Apify. Profiles and company pages in, their recent posts with real engagement counts out, plus the commenters LinkedIn shows publicly. No cookies, no account.",
   "type": "module",
   "bin": {
