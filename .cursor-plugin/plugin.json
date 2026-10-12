@@ -2,7 +2,7 @@
   "name": "mcp-linkedin-post-engager-capture",
   "displayName": "LinkedIn Post Tracker and Comment Capture",
   "version": "1.0.0",
-  "description": "Track LinkedIn posts from profiles and company pages, with the commenters LinkedIn shows publicly.",
+  "description": "Collect the LinkedIn posts a search engine has indexed for profiles and company pages.",
   "author": {
     "name": "Mamba Labs",
     "email": "labs@mambamindsetgrowth.com"

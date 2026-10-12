@@ -19,7 +19,7 @@ const ACTOR_ID = "oiGLNPuaf5BRaz9K5";
 // does not have.
 const ACTOR_REQUIRED = [];
 // Every input the live actor exposes must be exposed by the tool.
-const ACTOR_INPUTS = ["collect_commenters", "collect_reactors", "company_urls", "max_engagers_per_post", "posted_since", "profile_urls", "use_residential_proxy"];
+const ACTOR_INPUTS = ["company_urls", "posted_since", "profile_urls"];
 
 // Speak MCP over stdio to the built server and return the tools/list result.
 // No APIFY_TOKEN is set, on purpose: a client must see capabilities before it
