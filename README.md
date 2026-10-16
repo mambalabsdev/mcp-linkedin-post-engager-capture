@@ -41,6 +41,7 @@ LinkedIn profiles and company pages in, the posts a search engine has indexed fo
 | `profile_urls` | array of strings | one of the two | Person profiles, for example `https://www.linkedin.com/in/williamhgates`. |
 | `company_urls` | array of strings | one of the two | Company pages, for example `https://www.linkedin.com/company/microsoft`. |
 | `posted_since` | string | no | ISO date. Posts published before this are skipped before anything is charged. |
+| `max_charge_usd` | number | no | Spend cap for the run, in USD. The run starts no post whose charge would cross it and writes one `max_charge_reached` notice row. |
 
 ## Reading the output
 

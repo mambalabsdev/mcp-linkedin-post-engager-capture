@@ -1,7 +1,7 @@
 {
   "manifest_version": "0.3",
   "name": "mcp-linkedin-post-engager-capture",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "MCP server for the Mamba Labs LinkedIn Post Tracker actor on Apify. Profiles and company pages in, the posts a search engine has indexed for them out: permalink, author, excerpt, publish date. No request to LinkedIn.",
   "author": {
     "name": "Mamba Labs"

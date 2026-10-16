@@ -228,6 +228,7 @@ server.registerTool(
       openWorldHint: true,
     },
     inputSchema: {
+      max_charge_usd: z.number().min(0).optional().describe("Optional. The actor's own spend cap for this run, in USD. The run stops before a charge would take its total past this amount, writes one notice row saying so, and keeps every row already charged. Leave it empty for no cap of your own; the maximum cost per run set in Apify is honored either way."),
     profile_urls: z.array(z.string()).optional().describe("LinkedIn person profile URLs, for example https://www.linkedin.com/in/williamhgates. Country subdomains such as uk.linkedin.com are fine. Supply this, company_urls, or both."),
     company_urls: z.array(z.string()).optional().describe("LinkedIn company page URLs, for example https://www.linkedin.com/company/microsoft. Supply this, profile_urls, or both."),
     posted_since: z.string().optional().describe("ISO date or timestamp, for example 2026-08-01. Posts published before this are skipped BEFORE anything is charged. Leave empty to take everything the index holds."),
