@@ -222,7 +222,7 @@ server.registerTool(
       "Point it at LinkedIn person profiles or company pages and it returns the posts a search engine has indexed for each one, as flat rows: permalink, author, a text excerpt, and the publish date decoded from the post id. No request is sent to LinkedIn and no cookie or account is used. A result counts only when its permalink names the source, so posts are never attributed to the wrong author. Coverage is what the search index holds: posts appear days or weeks after publishing and many never appear. Commenters, reaction counts, comment counts and media are no longer returned (removed 2026-10-12, they came only from LinkedIn pages). Rows carry row_type post or notice; filter on row_type before loading a table. post_id is the activity URN and is stable across runs. Every row carries degraded and degradation_reason. Requires an APIFY_TOKEN and consumes Apify credits. Read only.",
     annotations: {
       title: "Capture LinkedIn Posts and Commenters",
-      readOnlyHint: true,
+      readOnlyHint: false,
       destructiveHint: false,
       idempotentHint: true,
       openWorldHint: true,
